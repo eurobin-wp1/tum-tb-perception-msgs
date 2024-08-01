@@ -1,6 +1,6 @@
-# eurobin-msgs
+# tum-tb-perception-msgs
 
-A ROS2 package that contains custom messages that are utilized in the [eurobin-perception](https://github.com/eurobin-wp1/eurobin-perception) package for the euRobin challenge.
+A ROS2 package that contains custom messages that are utilized in the [tum-tb-perception](https://github.com/eurobin-wp1/tum-tb-perception) package for the euROBIN challenge.
 
 Tested on Ubuntu 20.04 LTS and ROS Humble with Python 3.8.
 
@@ -14,7 +14,7 @@ Tested on Ubuntu 20.04 LTS and ROS Humble with Python 3.8.
 
 ## Overview
 
-<b>eurobin_msgs</b> contains the following custom messages:
+<b>tum_tb_perception_msgs</b> contains the following custom messages:
 * `Object.msg`: label and pose information of an object
 * `ObjectList.msg`: a list of `Object`s
 * `BoundingBox.msg`: label, confiddence score, and bounding box coordinates of an object that was detected in a 2D color image
@@ -31,7 +31,7 @@ geometry_msgs/Pose pose
 
 ### `ObjectList`:
 ```
-eurobin_msgs/Object[] objects
+tum_tb_perception_msgs/Object[] objects
 ```
 
 ### `BoundingBox`:
@@ -47,7 +47,7 @@ float32 confidence
 ### `BoundingBoxList`:
 ```
 std_msgs/Header header
-eurobin_msgs/BoundingBox[] bounding_boxes
+tum_tb_perception_msgs/BoundingBox[] bounding_boxes
 ```
 
 ## Installation
@@ -56,7 +56,7 @@ eurobin_msgs/BoundingBox[] bounding_boxes
 
 After cloning this repository into your workspace, build using:
 ```
-colcon build --packages-select eurobin_msgs
+colcon build --packages-select tum_tb_perception_msgs
 ```
 
 ## Usage
@@ -64,7 +64,7 @@ colcon build --packages-select eurobin_msgs
 Simply import any of the desired messages as follows:
 
 ```
-from eurobin_msgs.msg import BoundingBox, BoundingBoxList
+from tum_tb_perception_msgs.msg import BoundingBox, BoundingBoxList
 ```
 
 
@@ -74,7 +74,7 @@ from eurobin_msgs.msg import BoundingBox, BoundingBoxList
 <summary> Package Files </summary>
 
 ```
-eurobin-msgs
+tum-tb-perception-msgs
 │
 ├── msg
 │   ├── BoundingBoxList.msg

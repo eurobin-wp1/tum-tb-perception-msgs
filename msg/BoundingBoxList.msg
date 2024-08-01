@@ -1,2 +1,2 @@
 std_msgs/Header header
-eurobin_msgs/BoundingBox[] bounding_boxes
+tum_tb_perception_msgs/BoundingBox[] bounding_boxes
